@@ -2,15 +2,15 @@
   "version": 2,
   "builds": [
     {
-      "src": "server.js",
+      "src": "web700/assignment-5/server.js",
       "use": "@vercel/node",
-      "config": { "includeFiles": ["web700/assignment-5/modules/**","web700/assignment-5/Data/**","web700/assignment-5/public/css/**","web700/assignment-5/views/**"] }
+      "config": { "includeFiles": ["web700/assignment-5/modules/**", "web700/assignment-5/Data/**", "web700/assignment-5/public/css/**", "web700/assignment-5/views/**"] }
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "server.js"
+      "dest": "web700/assignment-5/server.js"
     }
   ]
 }

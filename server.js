@@ -150,3 +150,6 @@ data.initialize().then(function() {
 }).catch(function(err) {
     console.log("unable to start server: " + err);
 });
+
+// Export the server for Vercel
+module.exports = app;
